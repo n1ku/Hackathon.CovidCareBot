@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+    be aware that this code is only developed for some screenshots.. whithing some minuts.. 
+
+    created for hackathn <3 by Besnik Istrefi
+    
+    
+    -->
+    
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:vm="clr-namespace:Hackathon.CoronaCare.ViewModels"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="Hackathon.CoronaCare.Views.SurveyPage"
+             Title="Covid-CareBot">
+
+    <ContentPage.BindingContext>
+        <vm:SurveyViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form" StyleId="BaseStyle">
+                <TableRoot TextColor="Blue">
+                    <TableSection Title="Let's help each other?">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="How are you feeling today?" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Good" Margin="0,0,50,0" CheckChangedCommand="{Binding FeelingGoodCmd}"/>
+                                <input:CheckBox Text="Bad" CheckChangedCommand="{Binding FeelingGoodCmd2}"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="We recommend you to contact canton's COVID-19 Hotline." Margin="0,0,50,0"/>
+                               <!-- <Button Text="Contact"/>-->
+                               <!-- <Button Text="Back"/>-->
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="How are you feeling today?" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Good" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Bad"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="How are you feeling today?" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Good" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Bad"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="How are you feeling today?" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Good" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Bad"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="How are you feeling today?" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Good" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Bad"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="How are you feeling today?" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Good" Margin="0,0,50,0"/>
+                                <input:CheckBox Text="Bad"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

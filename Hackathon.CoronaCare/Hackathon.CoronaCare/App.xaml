@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+    be aware that this code is only developed for some screenshots.. whithing some minuts.. 
+
+    created for hackathn <3 by Besnik Istrefi
+    
+    
+    -->
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Hackathon.CoronaCare.App">
+    <Application.Resources>
+        
+    </Application.Resources>
+</Application>
